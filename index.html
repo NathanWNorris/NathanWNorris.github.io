@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathan Norris | Portfolio</title>
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #5f6673;
+      --line: #4b5563;
+      --paper: #ffffff;
+      --bg: #f3f4f6;
+      --accent: #24324a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 32px auto;
+      background: var(--paper);
+      padding: 52px 70px 64px;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid #d1d5db;
+      padding-bottom: 26px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      letter-spacing: 1px;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 12px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid var(--line);
+      letter-spacing: 0.3px;
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 17px;
+      color: var(--accent);
+    }
+
+    .date {
+      color: var(--muted);
+      font-style: italic;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .location,
+    .subline {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 8px 0 0 24px;
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills li {
+      margin-bottom: 6px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 14px;
+    }
+
+    .project-card {
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: #fafafa;
+    }
+
+    .project-card h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .project-card p {
+      margin: 0;
+      color: #374151;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid #d1d5db;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        margin: 0;
+        padding: 34px 24px 44px;
+        box-shadow: none;
+      }
+
+      .item-head {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Nathan Norris</h1>
+      <div class="contact">Jasper, Indiana &nbsp;|&nbsp; 812-630-3042 &nbsp;|&nbsp; nathanwnorris@gmail.com</div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Independent game developer with over a year of hands-on experience designing and building 3D platformers and small indie titles in Godot, Unity, and Panda3D. Comfortable working solo across the full development cycle, from mechanics and level design to iteration and polish. Computer Science graduate with additional background in Python, JavaScript, and data analysis, bringing a strong technical foundation to research- and evaluation-based work.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item-head">
+        <h3>Independent Game Developer — Self-Employed</h3>
+        <span class="date">2025 - Present</span>
+      </div>
+      <p class="location">Jasper, Indiana</p>
+      <ul>
+        <li>Design and develop original 3D platformer games and smaller indie projects independently, handling every stage of production from concept through playable build.</li>
+        <li>Build core gameplay systems, character controllers, and level layouts in Godot and Unity, and prototype 3D environments and mechanics in Panda3D.</li>
+        <li>Write and debug gameplay code using GDScript, C#, and Python, balancing performance with player feel across platforming mechanics like movement, jumping, and collision.</li>
+        <li>Playtest builds repeatedly and iterate on level design and difficulty based on direct feedback, since projects are self-directed with no external QA team.</li>
+        <li>Manage the entire self-employed workflow independently — scoping projects, setting milestones, and staying on schedule without outside oversight, which translates directly to working asynchronously and unsupervised.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>3D Platformer Game Prototype</h3>
+          <p>Built a playable 3D platformer prototype focused on movement, jumping, collision, level flow, and difficulty tuning.</p>
+        </div>
+        <div class="project-card">
+          <h3>Indie Gameplay Systems</h3>
+          <p>Created small game systems and mechanics in Godot, Unity, and Panda3D while testing ideas through quick playable builds.</p>
+        </div>
+        <div class="project-card">
+          <h3>Programming & Data Projects</h3>
+          <p>Used Python and JavaScript for technical projects, data analysis fundamentals, debugging, and structured problem solving.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>Purdue University</h3>
+      <p class="subline">Bachelor of Science, Computer Science — 2025</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><strong>Game Development Tools:</strong> Godot, Unity, Panda3D</li>
+        <li><strong>Programming Languages:</strong> Python, JavaScript, GDScript, C#</li>
+        <li><strong>Game Design:</strong> 3D platformer mechanics, level design, gameplay programming, playtesting &amp; iteration</li>
+        <li><strong>Other:</strong> Data analysis fundamentals, independent/asynchronous project management, technical writing</li>
+      </ul>
+    </section>
+
+    <footer>
+      Portfolio hosted with GitHub Pages
+    </footer>
+  </main>
+</body>
+</html>
